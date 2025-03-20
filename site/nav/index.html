@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- slide -->
+
+        <!-- slider -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+    <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
+
 <body>
     <nav class="d-flex">
         <div class="logo">
@@ -24,20 +40,141 @@
         <div class="icon">
             <ul class="d-flex">
                 <li class="none"><a href="#">
-                    <img src="assets/images/icon--search.svg" alt="">
-                 
-                </a></li>
+                        <img src="assets/images/icon--search.svg" alt="">
+
+                    </a></li>
                 <li class="none"><a href="#">
-                    <img src="assets/images/icon--bag.svg" alt="">
-                </a></li>
+                        <img src="assets/images/icon--bag.svg" alt="">
+                    </a></li>
                 <li class="m-navi"><a href="#">
-                    <img src="assets/images/material-symbols_menu-rounded.svg" alt="">
-                </a></li>
+                        <img src="assets/images/material-symbols_menu-rounded.svg" alt="">
+                    </a></li>
             </ul>
         </div>
     </nav>
     <section class="slider">
         <img src="assets/images/kv.jpg" alt="kv">
     </section>
+
+    <section class="content-slider">
+        <div class="content-textTitle">
+            <h2>
+                Lorem ipsum dolor sit amet consectetur. Ut viverra risus fringilla proin vel sit.
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Ut viverra risus fringilla proin vel sit.
+            </p>
+        </div>
+        <div class="slider">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide01.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide03.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide04.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide05.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide02.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="/site/nav/assets/images/slide01.png" alt="">
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider -->
+
+    <section class="content w-1316">
+
+        <div class="content-textTitle">
+            <h2>
+                Special writer
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur. Ut viverra risus fringilla proin vel sit.
+            </p>
+        </div>
+        <div class="row d-flex gap f-d-column">
+
+            <div class="coulmn-4">
+                <div class="img-section">
+                    <img src="/site/nav/assets/images/content-01.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tenetur tempora asperiores ut dolorem, adipisci nam ratione! Distinctio voluptate rem nesciunt quo odio quibusdam explicabo itaque nulla laudantium tempore. Quo.
+                    </p>
+                </div>
+            </div>
+            <div class="coulmn-4">
+                <div class="img-section">
+                    <img src="/site/nav/assets/images/content-02.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tenetur tempora asperiores ut dolorem, adipisci nam ratione! Distinctio voluptate rem nesciunt quo odio quibusdam explicabo itaque nulla laudantium tempore. Quo.
+                    </p>
+                </div>
+            </div>
+            <div class="coulmn-4">
+                <div class="img-section">
+                    <img src="/site/nav/assets/images/content-03.png" alt="">
+                </div>
+                <div class="text-section">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui tenetur tempora asperiores ut dolorem, adipisci nam ratione! Distinctio voluptate rem nesciunt quo odio quibusdam explicabo itaque nulla laudantium tempore. Quo.
+                    </p>
+                </div>
+            </div>   
+
+        </div>
+    
+    </section>
+
+
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+     <!-- slider -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- Initialize Swiper -->
+     <script>
+         var swiper = new Swiper(".mySwiper", {
+             slidesPerView: 6,
+             loop: true,
+             spaceBetween: 20,
+             pagination: {
+                 el: ".swiper-pagination",
+                 clickable: true,
+             },
+         });
+
+        // 연습
+     </script>
+
+
 </body>
+
+
+
 </html>
