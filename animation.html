@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            height: 600px;
+            border: solid 1px black;
+        }
+
+        .box1 {
+            border: solid 1px black;
+            border-radius: 100px;
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+            color: #fff;
+            animation: abc .5s infinite alternate;
+            position: absolute;   
+            animation-timing-function:linear;  
+        }
+        
+
+        .box1:hover {
+
+
+        }
+
+        @keyframes abc {
+            from {
+                background-color: blueviolet;
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                top: 300px;
+                left: 100px;
+            }
+
+            50% {
+                top: 0;
+                left: 200px;
+            }
+
+            75% {
+                top: 300px;
+                left: 300px;
+            }
+
+            to {
+                top: 0px;
+                left: 400px;
+                background: brown;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box1">box1</div>
+</div>
+</body>
+</html>
