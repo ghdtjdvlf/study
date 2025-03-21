@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        position: relative;
+        width: 100px;
+        height: 50px;
+        color: #fff;
+        background-color: black;
+        animation-name: playStop;
+        -moz-animation-name: playStop;
+        -webkit-animation-name: playStop;
+        -o-animation-name: playStop;
+        -ms-animation-name :playStop;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes playStop {
+        from {
+            left: 0;
+        }
+
+        50% {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    /* 모질라 파이어폭스  */
+    @-moz-@keyframes playStop {
+        from {
+            left: 0;
+        }
+
+        50% {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    /* 크롬사파리엔진 */
+    @-webkit-keyframes playStop {
+        from {
+            left: 0;
+        }
+
+        50% {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+    /* 오페라 */
+    @-o-@keyframes playStop {
+        from {
+            left: 0;
+        }
+
+        50% {
+            left: 300px;
+        }
+
+        to {
+            left: 0;
+        }
+    }
+
+
+    
+
+</style>
+
+<body>
+    <div class="content-box">
+        <div class="btn-content">
+            <button class="play">Play</button>
+            <button class="stop">Stop</button>
+        </div>
+        <div class="ani-content">
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+    $(function(){ 
+
+        $('.play').click(function(){
+            $('.box').css('background','yellow')
+            .css('animation-play-state', 'running');
+
+        });
+
+        $('.stop').click(function(){
+            $('.box').css('background','blue')
+            .css('animation-play-state', 'paused');
+        });
+
+    })
+</script>
+
+</html>
