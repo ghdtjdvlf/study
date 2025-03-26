@@ -1,0 +1,58 @@
+/* font */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+/*웹폰트 css 긁어오기*/
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+/*폰트패밀리 긁어오기*/
+.d-flex{
+    display: flex;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 140%;
+    letter-spacing: -.025em;
+    color: #333;
+}
+
+p{
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -.025em;
+
+}
+
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+.w-30{
+    width: 30%;
+}
+.w-25{
+    width: 25%;
+}
+.w-20{
+    width: 20%;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 1125px;
+    margin: 0 auto;
+}
+
+.main-top h2{
+    margin-top: 15PX;
+}
+
+@media(max-width:1125px){
+    .container{
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+@import url("reset.css");
+@import url("normalize.css");
+@import url("common.css");
+
+.main-top{
+    padding-top: 209px;
+    padding-bottom: 99px;
+    position: relative;
+    z-index: 999;
+}
+
+.main-top::after{
+    content: "";
+    width: 50%;
+    background: #1F88E6;
+    height: 100vh;
+    height: 937px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 100px;
+    z-index: -1;
+}
+
+.top_title{
+    font-size: 32px;
+    line-height: 140%;
+    letter-spacing: -.025em;
+    color: #333;
+}
+
+.title_point {
+    color: #fff;
+    background: #1F88E6;
+    padding: 0 10px;
+}
+
+.cars {
+    position: absolute;
+    width: 908px;
+    top: 55%;
+    right: 18%;
+
+}
