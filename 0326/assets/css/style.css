@@ -3,10 +3,11 @@
 @import url("common.css");
 
 .main-top{
-    padding-top: 209px;
+    padding-top: 13.06rem;
     padding-bottom: 99px;
     position: relative;
     z-index: 999;
+    height: 99vh;
 }
 
 .main-top::after{
@@ -14,31 +15,149 @@
     width: 50%;
     background: #1F88E6;
     height: 100vh;
-    height: 937px;
+    height: 58.56rem;
     position: absolute;
     right: 0;
     top: 0;
-    border-radius: 0 0 0 100px;
+    border-radius: 0 0 0 6.25rem;
     z-index: -1;
 }
 
 .top_title{
-    font-size: 32px;
+    font-size: 2.00rem;
     line-height: 140%;
-    letter-spacing: -.025em;
+    letter-spacing: -.025rem;
     color: #333;
 }
 
 .title_point {
     color: #fff;
     background: #1F88E6;
-    padding: 0 10px;
+    padding: 0 .63rem;
 }
 
 .cars {
     position: absolute;
-    width: 908px;
+    width: 56.75rem;
     top: 55%;
     right: 18%;
 
+}
+
+
+/* section02 */
+
+.section02 {
+    background-color: #444;
+    padding: 9.75rem 0 ;
+}
+
+.section02 .section02__title {
+    text-align: center;
+}
+
+.section02 .section02__title h2{
+    color: #fff;
+}
+
+.section02 .d-flex {
+    gap: 0 1.94rem;
+}
+
+
+.section02__text h2{
+    color: #fff;
+}
+
+.section02__text h3 {
+    font-size: 2.00rem;
+}
+
+.section02__text p {
+    font-size: 1.50rem;
+}
+
+.section02__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section02__icon img {
+    width: 3.81rem;
+}
+
+.content_bg {
+    background: #fff;
+    border-radius: 10.94rem;
+    padding:  2.25rem 1.88rem 4.50rem 1.88rem;
+}
+
+
+
+
+/* media(미디어쿼리) */
+
+@media (max-width : 1280px) {
+
+.cars {
+    position: absolute;
+    width: 807px;
+    right: 15%;
+}
+
+.main_top_title {
+    padding-left: 50px;
+}
+
+}
+
+@media (max-width : 1024px) {
+
+.cars {
+    width: 503px;
+    right: 10%;
+}
+
+
+.main-top::after{
+    width: 45%;
+}
+
+.top_title {
+    font-size: 24px;
+}
+
+.main-top h2 {
+    font-size: 52px;
+}
+
+
+}
+
+@media (max-width : 768px) {
+    .column-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .over-f {
+        overflow: hidden;
+    }
+
+    .cars {
+        position: relative;
+        left: 10%;
+        width: 80%;
+    }
+
+    .main-top::after {
+        width: 0;
+    }
+
+    .main_top_title {
+        padding-top: 50px;
+        padding-left: 0px;
+        text-align: center;
+    }
+   
 }
